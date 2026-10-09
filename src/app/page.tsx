@@ -17,7 +17,7 @@ export default function Home() {
         <Skills />
         <Contact />
       </main>
-      <footer className="border-t-2 border-[#111111] px-5 py-6 text-center font-mono text-[11px] tracking-[0.18em] text-[#111111] uppercase">
+      <footer className="border-t-2 border-[#10233f] px-5 py-6 text-center font-mono text-[11px] tracking-[0.18em] text-[#10233f] uppercase">
         編集 · src/content/portfolio.ts
       </footer>
     </>

@@ -1,6 +1,6 @@
 # Portfolio
 
-A recruiter-facing personal site. The look is a young Japanese street poster: heavy gothic type, vertical labels, a technical grid, and a red print stamp on warm paper. Motion is a ticker, a scan line, and a stamp that settles. It quiets itself when the visitor prefers reduced motion.
+A recruiter-facing personal site. The layout is still a young Japanese street poster — gothic type, a vertical label, crop marks, an index, two sample cards — set in blue hour. Navy and ice paper, a lamp-gold accent, one script line, film grain, and a moon. Motion is a ticker, a soft scan, drifting grid, and a stamp that settles. It quiets itself when the visitor prefers reduced motion.
 
 Name, role, projects, and contact details all live in [`src/content/portfolio.ts`](src/content/portfolio.ts). The copy shipping today is placeholder on purpose (`Your name`, `Project one`). It is not a real person and not real case studies.
 

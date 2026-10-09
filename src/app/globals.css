@@ -9,6 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: "Zen Kaku Gothic New", ui-sans-serif, system-ui, sans-serif;
   --font-poster: "Dela Gothic One", "Zen Kaku Gothic New", sans-serif;
+  --font-script: var(--font-vibes), "Great Vibes", cursive;
   --font-mono: var(--font-plex), ui-monospace, monospace;
   --font-heading: "Dela Gothic One", "Zen Kaku Gothic New", sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
@@ -50,24 +51,24 @@
 }
 
 :root {
-  --background: #f2efe8;
-  --foreground: #111111;
-  --card: #f7f4ee;
-  --card-foreground: #111111;
-  --popover: #f7f4ee;
-  --popover-foreground: #111111;
-  --primary: #ff2d2d;
-  --primary-foreground: #ffffff;
-  --secondary: #111111;
-  --secondary-foreground: #f2efe8;
-  --muted: #e6e1d8;
-  --muted-foreground: #3a3a3a;
-  --accent: #2f5bff;
-  --accent-foreground: #f2efe8;
+  --background: #e7eef6;
+  --foreground: #10233f;
+  --card: #f4f7fb;
+  --card-foreground: #10233f;
+  --popover: #f4f7fb;
+  --popover-foreground: #10233f;
+  --primary: #f3e6c8;
+  --primary-foreground: #10233f;
+  --secondary: #10233f;
+  --secondary-foreground: #e7eef6;
+  --muted: #d5e2f0;
+  --muted-foreground: #3d5270;
+  --accent: #1d4d8d;
+  --accent-foreground: #f3e6c8;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #111111;
-  --input: #111111;
-  --ring: #ff2d2d;
+  --border: #10233f;
+  --input: #10233f;
+  --ring: #c9a36a;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);

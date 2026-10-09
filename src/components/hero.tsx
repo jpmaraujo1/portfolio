@@ -14,11 +14,12 @@ export function Hero() {
   return (
     <section id="top" className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-8">
       <div className="flex items-stretch gap-3">
-        <p className="v-label hidden shrink-0 self-center font-poster text-sm tracking-[0.55em] text-[#111111] lg:block">
+        <p className="v-label hidden shrink-0 self-center font-poster text-sm tracking-[0.55em] text-[#10233f] lg:block">
           ウェブ開発
         </p>
-        <div className="poster relative min-w-0 flex-1 overflow-hidden border-2 border-[#111111] shadow-[8px_8px_0_#111111]">
-        <div className="tech-grid pointer-events-none absolute inset-0 opacity-80" />
+        <div className="poster relative min-w-0 flex-1 overflow-hidden border-2 border-[#10233f] shadow-[8px_8px_0_#0b1c3d]">
+        <div className="tech-grid pointer-events-none absolute inset-0" />
+        <span className="moon" aria-hidden />
         <span className="crop crop-tl" />
         <span className="crop crop-tr" />
         <span className="crop crop-bl" />
@@ -26,23 +27,24 @@ export function Hero() {
 
         <div className="relative grid gap-8 p-5 sm:p-8 lg:grid-cols-12 lg:gap-6 lg:p-10">
           <div className="lg:col-span-7">
-            <div className="flex flex-wrap items-center gap-3">
-              <p className="font-mono text-[11px] tracking-[0.28em] text-[#9eb0ff] uppercase">
+            <p className="font-script pr-20 text-5xl leading-none text-[#f3e6c8] sm:pr-28 sm:text-6xl">blue hour</p>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
                 For recruiters · 採用
               </p>
-              <span className="stamp inline-flex size-11 items-center justify-center font-sans text-lg leading-none font-bold">仮</span>
+              <span className="stamp inline-flex size-11 items-center justify-center font-sans text-lg leading-none font-bold text-[#f3e6c8]">仮</span>
             </div>
             <p className="mt-4 flex flex-wrap items-center gap-3 text-2xl">
               <span className="font-poster tracking-tight">{portfolio.name}</span>
-              <span className="border border-[#f4f1ea]/40 px-2 py-0.5 font-mono text-[10px] tracking-[0.22em] text-[#f4f1ea] uppercase">
+              <span className="border border-[#f3e6c8]/50 px-2 py-0.5 font-mono text-[10px] tracking-[0.22em] text-[#f3e6c8] uppercase">
                 Placeholder
               </span>
             </p>
-            <h1 className="mt-4 font-poster text-[clamp(2.7rem,7vw,5.6rem)] leading-[0.92] tracking-tight text-white">
+            <h1 className="mt-4 font-poster text-[clamp(2.7rem,7vw,5.6rem)] leading-[0.92] tracking-tight text-[#e8f0fa]">
               {lead ? <span className="block">{lead}</span> : null}
-              <span className="block text-[#ff2d2d]">{accent}</span>
+              <span className="block text-[#f3e6c8]">{accent}</span>
             </h1>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-[#f4f1ea] md:text-lg">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-[#e8f0fa] md:text-lg">
               {portfolio.value}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -51,7 +53,7 @@ export function Hero() {
               </Button>
               <a
                 href={hasEmail ? `mailto:${portfolio.email}` : "#contact"}
-                className="nav-link inline-flex min-h-11 items-center font-mono text-xs tracking-[0.2em] text-[#f4f1ea] uppercase"
+                className="nav-link inline-flex min-h-11 items-center font-mono text-xs tracking-[0.2em] text-[#e8f0fa] uppercase"
               >
                 Contact 連絡
               </a>
@@ -61,10 +63,10 @@ export function Hero() {
           <div className="lg:col-span-5 lg:self-end">
             <div className="board relative overflow-hidden">
               <div className="board-scan" />
-              <div className="relative flex items-center justify-between border-b border-[#2f5bff]/50 px-3 py-2 font-mono text-[10px] tracking-[0.22em] text-[#9eb0ff] uppercase">
+              <div className="relative flex items-center justify-between border-b border-[#f3e6c8]/30 px-3 py-2 font-mono text-[10px] tracking-[0.22em] text-[#f3e6c8] uppercase">
                 <span>Index</span>
                 <span className="flex items-center gap-2">
-                  <span className="blink inline-block size-1.5 bg-[#ff2d2d]" />
+                  <span className="blink inline-block size-1.5 bg-[#f3e6c8]" />
                   Live
                 </span>
               </div>
@@ -74,16 +76,16 @@ export function Hero() {
                     key={skill.name}
                     className="flex items-baseline justify-between gap-3 border-b border-white/10 px-3 py-3 last:border-b-0"
                   >
-                    <span className="font-mono text-[11px] text-[#2f5bff]">
+                    <span className="font-mono text-[11px] text-[#f3e6c8]">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <span className="flex-1 text-sm tracking-wide">{skill.name}</span>
                     {skill.primary ? (
-                      <span className="font-mono text-[10px] tracking-[0.16em] text-[#ff2d2d] uppercase">
+                      <span className="font-mono text-[10px] tracking-[0.16em] text-[#f3e6c8] uppercase">
                         Primary
                       </span>
                     ) : (
-                      <span className="font-mono text-[10px] text-white/30">—</span>
+                      <span className="font-mono text-[10px] text-white/35">—</span>
                     )}
                   </li>
                 ))}
