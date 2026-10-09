@@ -22,15 +22,6 @@
   background: #05070c url("/cloud-bg.jpg") center / cover no-repeat;
 }
 
-.sky-wash::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #f19e68;
-  mix-blend-mode: soft-light;
-  opacity: 0.62;
-}
-
 .sky-wash::after {
   content: "";
   position: absolute;
