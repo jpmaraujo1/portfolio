@@ -21,12 +21,9 @@ export function Hero() {
 
         <div className="relative grid gap-8 p-5 sm:p-8 lg:grid-cols-12 lg:gap-6 lg:p-10">
           <div className="lg:col-span-7">
-            <div className="flex items-start justify-between gap-4">
-              <p className="font-script text-5xl leading-none text-[#f7fbff] sm:text-6xl">blue hour</p>
-              <p className="mr-7 pt-2 font-mono text-lg tracking-[0.2em] text-[#f4f8fc]/90 lg:hidden" aria-hidden>
-                {"//"}
-              </p>
-            </div>
+            <p className="mr-7 text-right font-mono text-lg tracking-[0.2em] text-[#f4f8fc]/90 lg:hidden" aria-hidden>
+              {"//"}
+            </p>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
                 For recruiters · 採用
