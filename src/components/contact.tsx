@@ -8,7 +8,7 @@ export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-4 pb-12 md:px-8 md:pb-16">
       <Reveal>
-        <div className="poster relative overflow-hidden p-6 sm:p-10">
+        <div className="poster work-card relative overflow-hidden p-6 sm:p-10">
           <div className="relative">
             <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">05 — 連絡</p>
             <h2 className="mt-2 font-poster text-5xl leading-none text-[#e8f0fa] sm:text-7xl">Write.</h2>

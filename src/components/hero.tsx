@@ -17,7 +17,7 @@ export function Hero() {
         <p className="v-label hidden shrink-0 self-center font-poster text-sm tracking-[0.55em] text-[#f7fbff] lg:block">
           ウェブ開発
         </p>
-        <div className="poster relative min-w-0 flex-1 overflow-hidden">
+        <div className="poster work-card relative min-w-0 flex-1 overflow-hidden">
 
         <div className="relative grid gap-8 p-5 sm:p-8 lg:grid-cols-12 lg:gap-6 lg:p-10">
           <div className="lg:col-span-7">

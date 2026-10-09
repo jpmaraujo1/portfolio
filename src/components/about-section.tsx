@@ -11,7 +11,7 @@ export function AboutSection() {
             <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">About</h2>
           </div>
           <div className="md:col-span-7 md:col-start-6 md:border-l md:border-white/35 md:pl-8">
-            <p className="font-script text-5xl leading-none text-white sm:text-6xl">{portfolio.aboutLabel}</p>
+            <p className="text-4xl leading-tight font-medium sm:text-5xl">{portfolio.aboutLabel}</p>
             <p className="mt-2 font-mono text-[10px] tracking-[0.22em] text-white/65 uppercase">Placeholder</p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed">{portfolio.about}</p>
             <ul className="mt-6 flex flex-wrap gap-2">
