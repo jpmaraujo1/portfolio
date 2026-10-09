@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section id="top" className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-8">
       <div className="flex items-stretch gap-3">
-        <p className="v-label hidden shrink-0 self-center font-poster text-sm tracking-[0.55em] text-[#10233f] lg:block">
+        <p className="v-label hidden shrink-0 self-center font-poster text-sm tracking-[0.55em] text-[#f7fbff] lg:block">
           ウェブ開発
         </p>
         <div className="poster relative min-w-0 flex-1 overflow-hidden">

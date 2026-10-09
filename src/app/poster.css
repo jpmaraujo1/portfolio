@@ -17,12 +17,18 @@
 
 .sky-wash {
   position: fixed;
-  inset: -14%;
+  inset: 0;
   z-index: -20;
-  background:
-    linear-gradient(rgba(231, 238, 246, 0.78), rgba(231, 238, 246, 0.78)),
-    url("/evening-sky.jpg") center / cover no-repeat;
-  filter: blur(64px) saturate(1.35);
+  background: url("/evening-sky.jpg") center / cover no-repeat;
+}
+
+main {
+  text-shadow: 0 1px 12px rgba(8, 18, 40, 0.45);
+}
+
+.poster,
+.poster * {
+  text-shadow: none;
 }
 
 .poster {
@@ -119,7 +125,7 @@
 
 .num-outline {
   color: transparent;
-  -webkit-text-stroke: 1.5px #10233f;
+  -webkit-text-stroke: 1.5px #f4f8fc;
 }
 
 .work-card {

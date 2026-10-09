@@ -6,31 +6,31 @@ function SampleCard({ project, index }: { project: Project; index: number }) {
   const linked = project.link.href.length > 0;
 
   return (
-    <article className="work-card relative flex h-full flex-col rounded-3xl border border-white/70 bg-white/80 p-5 text-[#10233f] shadow-[0_16px_40px_rgba(18,40,72,0.08)] backdrop-blur-xl sm:p-7">
+    <article className="work-card relative flex h-full flex-col rounded-3xl border border-white/30 bg-[#0c2240]/40 p-5 text-[#f7fbff] sm:p-7">
       <div className="flex items-start justify-between gap-3">
         <p className="num-outline font-poster text-5xl leading-none">{number}</p>
         {project.sample ? (
-          <p className="stamp px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#1d4d8d] uppercase">見本 sample</p>
+          <p className="stamp px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#f3e6c8] uppercase">見本 sample</p>
         ) : null}
       </div>
       <h3 className="mt-6 font-poster text-4xl leading-none tracking-tight sm:text-5xl">{project.title}</h3>
-      <p className="ink-muted mt-2 font-mono text-[10px] tracking-[0.22em] text-[#8d6840] uppercase">Placeholder</p>
+      <p className="ink-muted mt-2 font-mono text-[10px] tracking-[0.22em] text-[#f3e6c8] uppercase">Placeholder</p>
 
       <dl className="mt-7 space-y-4">
         <div>
-          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-[#4d6484] uppercase">Impact</dt>
+          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-white/65 uppercase">Impact</dt>
           <dd className="mt-1 font-poster text-2xl leading-snug">{project.impact}</dd>
         </div>
         <div>
-          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-[#4d6484] uppercase">Problem</dt>
+          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-white/65 uppercase">Problem</dt>
           <dd className="mt-1 text-base leading-relaxed">{project.problem}</dd>
         </div>
         <div>
-          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-[#4d6484] uppercase">What you did</dt>
+          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-white/65 uppercase">What you did</dt>
           <dd className="mt-1 text-base leading-relaxed">{project.contribution}</dd>
         </div>
         <div>
-          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-[#4d6484] uppercase">Stack</dt>
+          <dt className="ink-muted font-mono text-[10px] tracking-[0.2em] text-white/65 uppercase">Stack</dt>
           <dd className="mt-2 flex flex-wrap gap-2">
             {project.stack.map((item) => (
               <span key={item} className="border border-current px-2 py-1 font-mono text-xs tracking-wide">
@@ -47,7 +47,7 @@ function SampleCard({ project, index }: { project: Project; index: number }) {
             {project.link.label}
           </a>
         ) : (
-          <span className="ink-muted inline-flex min-h-11 items-center font-mono text-xs tracking-[0.18em] text-[#4d6484] uppercase">
+          <span className="ink-muted inline-flex min-h-11 items-center font-mono text-xs tracking-[0.18em] text-white/65 uppercase">
             {project.link.label}
           </span>
         )}
@@ -62,12 +62,12 @@ export function SelectedWork() {
   return (
     <section id="work" className="mx-auto max-w-6xl px-4 py-12 md:px-8 md:py-16">
       <Reveal>
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b-2 border-[#10233f] pb-4">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-white/35 pb-4">
           <div>
-            <p className="font-mono text-[11px] tracking-[0.28em] text-[#4d6484] uppercase">02 — 作品</p>
+            <p className="font-mono text-[11px] tracking-[0.28em] text-white/65 uppercase">02 — 作品</p>
             <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">Two pieces.</h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed text-[#24364f]">
+          <p className="max-w-sm text-sm leading-relaxed text-white/85">
             A pair, on purpose. Role and impact first. These are layout samples, not case studies.
           </p>
         </div>
@@ -75,8 +75,8 @@ export function SelectedWork() {
 
       {projects.length === 0 ? (
         <Reveal>
-          <div className="border-2 border-dashed border-[#10233f] px-6 py-14">
-            <p className="font-mono text-[10px] tracking-[0.22em] text-[#1d4d8d] uppercase">Placeholder</p>
+          <div className="border-2 border-dashed border-white/40 px-6 py-14">
+            <p className="font-mono text-[10px] tracking-[0.22em] text-[#f3e6c8] uppercase">Placeholder</p>
             <h3 className="mt-3 font-poster text-4xl">{portfolio.emptyWork.title}</h3>
             <p className="mt-4 max-w-lg text-base leading-relaxed">{portfolio.emptyWork.body}</p>
           </div>

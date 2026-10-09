@@ -13,11 +13,11 @@ export function SiteHeader() {
   const loop = `${tape}   ·   ${tape}   ·   `;
 
   return (
-    <header className="sticky top-0 z-30 border-b border-white/50 bg-white/55 backdrop-blur-2xl">
+    <header className="sticky top-0 z-30 bg-[#102a4e] text-[#f7fbff]">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-end sm:justify-between md:px-8">
         <a href="#top" className="group flex items-baseline gap-3">
           <span className="font-poster text-lg leading-none tracking-tight">{portfolio.kicker}</span>
-          <span className="text-sm tracking-wide text-[#10233f]">ポートフォリオ</span>
+          <span className="text-sm tracking-wide text-white/80">ポートフォリオ</span>
         </a>
         <nav aria-label="Page">
           <ul className="flex flex-wrap gap-x-4 gap-y-1">
@@ -25,14 +25,14 @@ export function SiteHeader() {
               <li key={item.href}>
                 <a href={item.href} className="nav-link inline-flex min-h-11 items-baseline gap-1.5">
                   <span className="text-sm font-medium">{item.en}</span>
-                  <span className="text-[11px] text-[#4d6484]">{item.jp}</span>
+                  <span className="text-[11px] text-white/70">{item.jp}</span>
                 </a>
               </li>
             ))}
           </ul>
         </nav>
       </div>
-      <div className="overflow-hidden border-t border-white/30 bg-[#10233f]/45 text-[#f4f8fc] backdrop-blur-md">
+      <div className="overflow-hidden bg-[#0b2342] text-[#f4f8fc]">
         <p className="ticker py-1.5 font-mono text-[11px] tracking-[0.22em] uppercase">
           <span>{loop}</span>
           <span aria-hidden>{loop}</span>

@@ -5,15 +5,15 @@ export function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-4 py-12 md:px-8 md:py-16">
       <Reveal>
-        <p className="font-mono text-[11px] tracking-[0.28em] text-[#4d6484] uppercase">04 — 技能</p>
+        <p className="font-mono text-[11px] tracking-[0.28em] text-white/70 uppercase">04 — 技能</p>
         <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">Where the work sits</h2>
       </Reveal>
-      <ol className="mt-8 border-t-2 border-[#10233f]">
+      <ol className="mt-8 border-t border-white/35">
         {portfolio.skills.map((skill, index) => (
           <Reveal key={skill.name} delay={index * 60}>
             <li
-              className={`grid gap-2 border-b-2 border-[#10233f] py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6 ${
-                skill.primary ? "rounded-2xl bg-[#123a6b] px-3 text-[#e8f0fa] sm:px-4" : ""
+              className={`grid gap-2 border-b border-white/35 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6 ${
+                skill.primary ? "rounded-2xl border-transparent bg-[#0c2240]/50 px-3 sm:px-4" : ""
               }`}
             >
               <p className="font-mono text-xs tracking-[0.2em] sm:col-span-1">
@@ -25,7 +25,7 @@ export function Skills() {
                   <span className="ml-3 align-middle font-sans text-[10px] tracking-[0.2em] uppercase">Primary</span>
                 ) : null}
               </p>
-              <p className={`text-base leading-relaxed sm:col-span-6 ${skill.primary ? "text-[#e8f0fa]" : "text-[#24364f]"}`}>
+              <p className="text-base leading-relaxed text-white/85 sm:col-span-6">
                 {skill.detail}
               </p>
             </li>

@@ -1,6 +1,6 @@
 # Portfolio
 
-A recruiter-facing personal site. The layout is still a young Japanese street poster — gothic type, a vertical label, an index, two sample cards — set on an evening-sky photograph. The page behind it is a soft blur of that same sky, with frosted cards and a white pill button, closer to a now-playing screen. Motion is a ticker, a soft scan, and a stamp that settles. It quiets itself when the visitor prefers reduced motion.
+A recruiter-facing personal site. The layout is still a young Japanese street poster — gothic type, a vertical label, an index, two sample cards — set on an evening-sky photograph. The page behind it is that sky, sharp, edge to edge. Type sits on the photograph. The title card and the contact card still use their own image. Motion is a ticker, a soft scan, and a stamp that settles. It quiets itself when the visitor prefers reduced motion.
 
 Name, role, projects, and contact details all live in [`src/content/portfolio.ts`](src/content/portfolio.ts). The copy shipping today is placeholder on purpose (`Your name`, `Project one`). It is not a real person and not real case studies.
 
