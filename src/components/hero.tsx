@@ -17,12 +17,7 @@ export function Hero() {
         <p className="v-label hidden shrink-0 self-center font-poster text-sm tracking-[0.55em] text-[#10233f] lg:block">
           ウェブ開発
         </p>
-        <div className="poster relative min-w-0 flex-1 overflow-hidden border-2 border-[#10233f] shadow-[8px_8px_0_#0b1c3d]">
-        <div className="tech-grid pointer-events-none absolute inset-0" />
-        <span className="crop crop-tl" />
-        <span className="crop crop-tr" />
-        <span className="crop crop-bl" />
-        <span className="crop crop-br" />
+        <div className="poster relative min-w-0 flex-1 overflow-hidden">
 
         <div className="relative grid gap-8 p-5 sm:p-8 lg:grid-cols-12 lg:gap-6 lg:p-10">
           <div className="lg:col-span-7">
@@ -53,7 +48,7 @@ export function Hero() {
             </p>
             <div className="mt-6 h-px w-28 bg-[#f4f8fc]/80" />
             <div className="mt-6 flex flex-wrap items-center gap-4">
-              <Button asChild className="h-12 rounded-none! px-5 text-sm tracking-[0.14em] uppercase shadow-none">
+              <Button asChild className="h-12 rounded-full! bg-white! px-6 text-sm tracking-[0.14em] text-[#10233f]! uppercase shadow-none hover:bg-white/90!">
                 <a href="#work">View selected work</a>
               </Button>
               <a

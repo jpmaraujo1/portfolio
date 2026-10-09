@@ -5,7 +5,7 @@ export function AboutSection() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-8">
       <Reveal>
-        <div className="grid gap-8 border-2 border-[#10233f] bg-[#f4f7fb] p-6 md:grid-cols-12 md:p-10">
+        <div className="grid gap-8 rounded-3xl border border-white/70 bg-white/80 p-6 shadow-[0_16px_40px_rgba(18,40,72,0.08)] backdrop-blur-xl md:grid-cols-12 md:p-10">
           <div className="md:col-span-4">
             <p className="font-mono text-[11px] tracking-[0.28em] text-[#4d6484] uppercase">03 — 紹介</p>
             <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">About</h2>

@@ -13,7 +13,7 @@ export function SiteHeader() {
   const loop = `${tape}   ·   ${tape}   ·   `;
 
   return (
-    <header className="sticky top-0 z-30 border-b-2 border-[#10233f] bg-[#e7eef6]/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-30 border-b border-white/50 bg-white/55 backdrop-blur-2xl">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-end sm:justify-between md:px-8">
         <a href="#top" className="group flex items-baseline gap-3">
           <span className="font-poster text-lg leading-none tracking-tight">{portfolio.kicker}</span>
@@ -32,7 +32,7 @@ export function SiteHeader() {
           </ul>
         </nav>
       </div>
-      <div className="overflow-hidden border-t border-[#10233f] bg-[#0c2a5c] text-[#e8f0fa]">
+      <div className="overflow-hidden border-t border-white/30 bg-[#10233f]/45 text-[#f4f8fc] backdrop-blur-md">
         <p className="ticker py-1.5 font-mono text-[11px] tracking-[0.22em] uppercase">
           <span>{loop}</span>
           <span aria-hidden>{loop}</span>

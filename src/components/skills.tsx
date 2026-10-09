@@ -13,7 +13,7 @@ export function Skills() {
           <Reveal key={skill.name} delay={index * 60}>
             <li
               className={`grid gap-2 border-b-2 border-[#10233f] py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6 ${
-                skill.primary ? "bg-[#123a6b] px-3 text-[#e8f0fa] sm:px-4" : ""
+                skill.primary ? "rounded-2xl bg-[#123a6b] px-3 text-[#e8f0fa] sm:px-4" : ""
               }`}
             >
               <p className="font-mono text-xs tracking-[0.2em] sm:col-span-1">

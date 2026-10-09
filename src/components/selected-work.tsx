@@ -6,7 +6,7 @@ function SampleCard({ project, index }: { project: Project; index: number }) {
   const linked = project.link.href.length > 0;
 
   return (
-    <article className="work-card relative flex h-full flex-col border-2 border-[#10233f] bg-[#f4f7fb] p-5 text-[#10233f] sm:p-7">
+    <article className="work-card relative flex h-full flex-col rounded-3xl border border-white/70 bg-white/80 p-5 text-[#10233f] shadow-[0_16px_40px_rgba(18,40,72,0.08)] backdrop-blur-xl sm:p-7">
       <div className="flex items-start justify-between gap-3">
         <p className="num-outline font-poster text-5xl leading-none">{number}</p>
         {project.sample ? (

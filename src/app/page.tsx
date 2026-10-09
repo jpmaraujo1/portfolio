@@ -8,7 +8,7 @@ import { Skills } from "@/components/skills";
 export default function Home() {
   return (
     <>
-      <div className="paper-dots pointer-events-none fixed inset-0 -z-10" />
+      <div className="sky-wash pointer-events-none" aria-hidden />
       <SiteHeader />
       <main>
         <Hero />
@@ -17,7 +17,7 @@ export default function Home() {
         <Skills />
         <Contact />
       </main>
-      <footer className="border-t-2 border-[#10233f] px-5 py-6 text-center font-mono text-[11px] tracking-[0.18em] text-[#10233f] uppercase">
+      <footer className="border-t border-[#10233f]/20 px-5 py-6 text-center font-mono text-[11px] tracking-[0.18em] text-[#10233f] uppercase">
         編集 · src/content/portfolio.ts
       </footer>
     </>
