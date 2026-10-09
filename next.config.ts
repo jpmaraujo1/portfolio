@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Cursor's preview reaches this server as 127.0.0.1, which Next blocks
   // when the dev server is bound to 0.0.0.0.
-  allowedDevOrigins: ["127.0.0.1", "localhost"],
+  allowedDevOrigins: ["127.0.0.1", "localhost", "*.trycloudflare.com"],
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
