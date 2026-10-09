@@ -19,7 +19,6 @@ export function Hero() {
         </p>
         <div className="poster relative min-w-0 flex-1 overflow-hidden border-2 border-[#10233f] shadow-[8px_8px_0_#0b1c3d]">
         <div className="tech-grid pointer-events-none absolute inset-0" />
-        <span className="moon" aria-hidden />
         <span className="crop crop-tl" />
         <span className="crop crop-tr" />
         <span className="crop crop-bl" />
@@ -27,7 +26,12 @@ export function Hero() {
 
         <div className="relative grid gap-8 p-5 sm:p-8 lg:grid-cols-12 lg:gap-6 lg:p-10">
           <div className="lg:col-span-7">
-            <p className="font-script pr-20 text-5xl leading-none text-[#f3e6c8] sm:pr-28 sm:text-6xl">blue hour</p>
+            <div className="flex items-start justify-between gap-4">
+              <p className="font-script text-5xl leading-none text-[#f7fbff] sm:text-6xl">blue hour</p>
+              <p className="mr-7 pt-2 font-mono text-lg tracking-[0.2em] text-[#f4f8fc]/90 lg:hidden" aria-hidden>
+                {"//"}
+              </p>
+            </div>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
                 For recruiters · 採用
@@ -44,10 +48,11 @@ export function Hero() {
               {lead ? <span className="block">{lead}</span> : null}
               <span className="block text-[#f3e6c8]">{accent}</span>
             </h1>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-[#e8f0fa] md:text-lg">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-[#f4f8fc] md:text-lg">
               {portfolio.value}
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-6 h-px w-28 bg-[#f4f8fc]/80" />
+            <div className="mt-6 flex flex-wrap items-center gap-4">
               <Button asChild className="h-12 rounded-none! px-5 text-sm tracking-[0.14em] uppercase shadow-none">
                 <a href="#work">View selected work</a>
               </Button>
@@ -60,8 +65,11 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 lg:self-end">
-            <div className="board relative overflow-hidden">
+          <div className="flex h-full flex-col lg:col-span-5">
+            <p className="mb-8 hidden font-mono text-lg tracking-[0.2em] text-[#f4f8fc]/90 lg:block" aria-hidden>
+              {"//"}
+            </p>
+            <div className="board relative mt-auto overflow-hidden">
               <div className="board-scan" />
               <div className="relative flex items-center justify-between border-b border-[#f3e6c8]/30 px-3 py-2 font-mono text-[10px] tracking-[0.22em] text-[#f3e6c8] uppercase">
                 <span>Index</span>
