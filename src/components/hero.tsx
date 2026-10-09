@@ -31,17 +31,17 @@ export function Hero() {
               <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
                 For recruiters · 採用
               </p>
-              <span className="stamp inline-flex size-11 items-center justify-center font-sans text-lg leading-none font-bold text-[#f3b27a]">仮</span>
+              <span className="stamp inline-flex size-11 items-center justify-center font-sans text-lg leading-none font-bold text-[#f4b390]">仮</span>
             </div>
             <p className="mt-4 flex flex-wrap items-center gap-3 text-2xl">
               <span className="font-poster tracking-tight">{portfolio.name}</span>
-              <span className="border border-[#f3b27a]/50 px-2 py-0.5 font-mono text-[10px] tracking-[0.22em] text-[#f3b27a] uppercase">
+              <span className="border border-[#f4b390]/50 px-2 py-0.5 font-mono text-[10px] tracking-[0.22em] text-[#f4b390] uppercase">
                 Placeholder
               </span>
             </p>
             <h1 className="mt-4 font-poster text-[clamp(2.7rem,7vw,5.6rem)] leading-[0.92] tracking-tight text-[#e8f0fa]">
               {lead ? <span className="block">{lead}</span> : null}
-              <span className="block text-[#f3b27a]">{accent}</span>
+              <span className="block text-[#f4b390]">{accent}</span>
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-[#f4f8fc] md:text-lg">
               {portfolio.value}
@@ -66,10 +66,10 @@ export function Hero() {
             </p>
             <div className="board relative mt-auto overflow-hidden">
               <div className="board-scan" />
-              <div className="relative flex items-center justify-between border-b border-[#f3b27a]/30 px-3 py-2 font-mono text-[10px] tracking-[0.22em] text-[#f3b27a] uppercase">
+              <div className="relative flex items-center justify-between border-b border-[#f4b390]/30 px-3 py-2 font-mono text-[10px] tracking-[0.22em] text-[#f4b390] uppercase">
                 <span>Index</span>
                 <span className="flex items-center gap-2">
-                  <span className="blink inline-block size-1.5 bg-[#f3b27a]" />
+                  <span className="blink inline-block size-1.5 bg-[#f4b390]" />
                   Live
                 </span>
               </div>
@@ -79,12 +79,12 @@ export function Hero() {
                     key={skill.name}
                     className="flex items-baseline justify-between gap-3 border-b border-white/10 px-3 py-3 last:border-b-0"
                   >
-                    <span className="font-mono text-[11px] text-[#f3b27a]">
+                    <span className="font-mono text-[11px] text-[#f4b390]">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <span className="flex-1 text-sm tracking-wide">{skill.name}</span>
                     {skill.primary ? (
-                      <span className="font-mono text-[10px] tracking-[0.16em] text-[#f3b27a] uppercase">
+                      <span className="font-mono text-[10px] tracking-[0.16em] text-[#f4b390] uppercase">
                         Primary
                       </span>
                     ) : (
