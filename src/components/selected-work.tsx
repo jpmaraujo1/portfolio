@@ -10,11 +10,11 @@ function SampleCard({ project, index }: { project: Project; index: number }) {
       <div className="flex items-start justify-between gap-3">
         <p className="num-outline font-poster text-5xl leading-none">{number}</p>
         {project.sample ? (
-          <p className="stamp px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#f6b5a6] uppercase">見本 sample</p>
+          <p className="stamp px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#f3b27a] uppercase">見本 sample</p>
         ) : null}
       </div>
       <h3 className="mt-6 font-poster text-4xl leading-none tracking-tight sm:text-5xl">{project.title}</h3>
-      <p className="ink-muted mt-2 font-mono text-[10px] tracking-[0.22em] text-[#f6b5a6] uppercase">Placeholder</p>
+      <p className="ink-muted mt-2 font-mono text-[10px] tracking-[0.22em] text-[#f3b27a] uppercase">Placeholder</p>
 
       <dl className="mt-7 space-y-4">
         <div>
@@ -76,7 +76,7 @@ export function SelectedWork() {
       {projects.length === 0 ? (
         <Reveal>
           <div className="border-2 border-dashed border-white/40 px-6 py-14">
-            <p className="font-mono text-[10px] tracking-[0.22em] text-[#f6b5a6] uppercase">Placeholder</p>
+            <p className="font-mono text-[10px] tracking-[0.22em] text-[#f3b27a] uppercase">Placeholder</p>
             <h3 className="mt-3 font-poster text-4xl">{portfolio.emptyWork.title}</h3>
             <p className="mt-4 max-w-lg text-base leading-relaxed">{portfolio.emptyWork.body}</p>
           </div>

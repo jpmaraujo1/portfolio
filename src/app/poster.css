@@ -1,6 +1,6 @@
 ::selection {
   background: #1d4d8d;
-  color: #f6b5a6;
+  color: #f3b27a;
 }
 
 .paper-dots {
@@ -26,9 +26,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #f2a394;
+  background: #f09a3c;
   mix-blend-mode: soft-light;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 .sky-wash::after {
@@ -135,7 +135,7 @@ main {
 }
 
 .work-card:hover {
-  background: rgba(246, 181, 166, 0.16);
+  background: rgba(240, 154, 60, 0.16);
   color: #f7fbff;
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(90, 40, 36, 0.2);
@@ -150,11 +150,11 @@ main {
 }
 
 .work-card:hover .stamp {
-  color: #f6b5a6;
+  color: #f3b27a;
 }
 
 .nav-link {
-  background-image: linear-gradient(#e9897c, #e9897c);
+  background-image: linear-gradient(#e07a32, #e07a32);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 2px;
