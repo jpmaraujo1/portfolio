@@ -48,7 +48,7 @@ export type Portfolio = {
 export const portfolio: Portfolio = {
   name: "Your name",
   role: "Full-stack engineer",
-  kicker: "blue hour",
+  kicker: "Portfolio",
   value:
     "Web development is the craft. Data science and machine learning sit beside it.",
   disciplines: ["Full-stack", "Data science", "Machine learning"],

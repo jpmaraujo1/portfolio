@@ -1,6 +1,6 @@
 # Portfolio
 
-A recruiter-facing personal site. The look is blue hour: deep indigo, a paper poster for the work, and one warm lamp of gold. Motion stays slow — a drifting moon, film grain, a scan line — and quiets itself when the visitor prefers reduced motion.
+A recruiter-facing personal site. The look is a young Japanese street poster: heavy gothic type, vertical labels, a technical grid, and a red print stamp on warm paper. Motion is a ticker, a scan line, and a stamp that settles. It quiets itself when the visitor prefers reduced motion.
 
 Name, role, projects, and contact details all live in [`src/content/portfolio.ts`](src/content/portfolio.ts). The copy shipping today is placeholder on purpose (`Your name`, `Project one`). It is not a real person and not real case studies.
 
