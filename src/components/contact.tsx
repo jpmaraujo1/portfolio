@@ -12,7 +12,7 @@ export function Contact() {
           <div className="relative">
             <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">05 — 連絡</p>
             <h2 className="mt-2 font-poster text-5xl leading-none text-[#e8f0fa] sm:text-7xl">Write.</h2>
-            <p className="mt-6 font-script text-5xl leading-none text-white sm:text-7xl">{email || portfolio.emailLabel}</p>
+            <p className="mt-6 font-poster text-4xl leading-none tracking-tight break-words text-white sm:text-5xl">{email || portfolio.emailLabel}</p>
             <p className="mt-2 font-mono text-[10px] tracking-[0.22em] text-[#e8f0fa]/70 uppercase">
               {email ? "Email" : "Placeholder"}
             </p>

@@ -8,14 +8,10 @@ export function Skills() {
         <p className="font-mono text-[11px] tracking-[0.28em] text-white/70 uppercase">04 — 技能</p>
         <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">Where the work sits</h2>
       </Reveal>
-      <ol className="mt-8 border-t border-white/35">
+      <ol className="mt-8 grid gap-4">
         {portfolio.skills.map((skill, index) => (
           <Reveal key={skill.name} delay={index * 60}>
-            <li
-              className={`grid gap-2 border-b border-white/35 py-5 sm:grid-cols-12 sm:items-baseline sm:gap-6 ${
-                skill.primary ? "work-card rounded-3xl border border-white/35 px-3 sm:px-4" : ""
-              }`}
-            >
+            <li className="work-card grid gap-2 rounded-3xl border border-white/35 px-4 py-5 text-[#f7fbff] sm:grid-cols-12 sm:items-baseline sm:gap-6 sm:px-6">
               <p className="font-mono text-xs tracking-[0.2em] sm:col-span-1">
                 {String(index + 1).padStart(2, "0")}
               </p>
