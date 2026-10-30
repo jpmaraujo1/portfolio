@@ -71,7 +71,7 @@ export const portfolio: Portfolio = {
       problem:
         "Teachers were assembling every exam by hand: copying questions, formatting, naming and organizing files. Slow, repetitive and easy to get wrong.",
       contribution:
-        "Designed the whole system and its workflow, built it with AI-assisted development, and polished it with feedback from the teachers using it every week.",
+        "Designed and built the whole system and its workflow, then improved it with feedback from the teachers using it every week.",
       stack: ["Google Apps Script", "Google Sheets", "Google Docs", "Google Drive"],
       link: { label: "", href: "" },
       note: "Private: runs inside the school's workspace",
