@@ -11,26 +11,30 @@ export function Contact() {
         <div className="poster work-card relative overflow-hidden p-6 sm:p-10">
           <div className="relative">
             <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">05 — 連絡</p>
-            <h2 className="mt-2 font-poster text-5xl leading-none text-[#e8f0fa] sm:text-7xl">Write.</h2>
-            <p className="mt-6 font-poster text-4xl leading-none tracking-tight break-words text-white sm:text-5xl">{email || portfolio.emailLabel}</p>
-            <p className="mt-2 font-mono text-[10px] tracking-[0.22em] text-[#e8f0fa]/70 uppercase">
-              {email ? "Email" : "Placeholder"}
-            </p>
+            <h2 className="mt-2 font-poster text-5xl leading-none text-[#e8f0fa] sm:text-7xl">Contact</h2>
+            {email ? (
+              <p className="mt-6 font-poster text-3xl leading-none tracking-tight break-all text-white sm:text-5xl">{email}</p>
+            ) : null}
             <p className="mt-5 max-w-md text-base leading-relaxed text-[#e8f0fa]">
-              {email
-                ? "A note is enough. Role and impact are above."
-                : "Add an address in the content file and this becomes a real link. Until then it is only a placeholder."}
+              Looking for a junior web development role, on-site in RS or remote.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               {email ? (
                 <Button asChild className="h-12 rounded-full! bg-white! px-6 tracking-[0.14em] text-[#10233f]! uppercase shadow-none hover:bg-white/90!">
-                  <a href={`mailto:${email}`}>{email}</a>
+                  <a href={`mailto:${email}`}>Send an email</a>
                 </Button>
-              ) : (
-                <span className="inline-flex h-12 items-center rounded-full bg-white px-5 font-mono text-xs tracking-[0.18em] text-[#10233f] uppercase">
-                  {portfolio.emailLabel}
-                </span>
-              )}
+              ) : null}
+              {portfolio.links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link inline-flex min-h-11 items-center font-mono text-xs tracking-[0.2em] text-[#e8f0fa] uppercase"
+                >
+                  {link.label} ↗
+                </a>
+              ))}
             </div>
           </div>
         </div>

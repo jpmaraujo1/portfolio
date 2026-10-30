@@ -12,9 +12,11 @@ export function AboutSection() {
               <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">About</h2>
             </div>
             <div className="md:col-span-7 md:col-start-6 md:border-l md:border-white/35 md:pl-8">
-              <p className="font-poster text-4xl leading-none tracking-tight sm:text-5xl">{portfolio.aboutLabel}</p>
-              <p className="mt-2 font-mono text-[10px] tracking-[0.22em] text-white/65 uppercase">Placeholder</p>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed">{portfolio.about}</p>
+              <div className="max-w-xl space-y-4 text-lg leading-relaxed">
+                {portfolio.about.map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)}>{paragraph}</p>
+                ))}
+              </div>
               <ul className="mt-6 flex flex-wrap gap-2">
                 {portfolio.disciplines.map((item) => (
                   <li key={item} className="border border-white/45 px-2.5 py-1 font-mono text-xs tracking-wide">

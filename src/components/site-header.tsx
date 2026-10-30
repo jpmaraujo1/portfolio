@@ -7,7 +7,7 @@ const links = [
   { href: "#contact", en: "Contact", jp: "連絡" },
 ] as const;
 
-const tape = [...portfolio.disciplines, "Web"].join("   ·   ");
+const tape = portfolio.disciplines.join("   ·   ");
 
 export function SiteHeader() {
   const loop = `${tape}   ·   ${tape}   ·   `;

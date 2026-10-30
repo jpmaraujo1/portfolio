@@ -4,6 +4,7 @@ import { Hero } from "@/components/hero";
 import { SelectedWork } from "@/components/selected-work";
 import { SiteHeader } from "@/components/site-header";
 import { Skills } from "@/components/skills";
+import { portfolio } from "@/content/portfolio";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="border-t border-white/20 px-5 py-6 text-center font-mono text-[11px] tracking-[0.18em] text-white/75 uppercase">
-        編集 · src/content/portfolio.ts
+        © {new Date().getFullYear()} {portfolio.name} · Designed &amp; built with Next.js
       </footer>
     </>
   );

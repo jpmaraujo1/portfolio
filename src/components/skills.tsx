@@ -6,7 +6,7 @@ export function Skills() {
     <section id="skills" className="mx-auto max-w-6xl px-4 py-12 md:px-8 md:py-16">
       <Reveal>
         <p className="font-mono text-[11px] tracking-[0.28em] text-white/70 uppercase">04 — 技能</p>
-        <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">Where the work sits</h2>
+        <h2 className="mt-2 font-poster text-5xl leading-none sm:text-6xl">Skills</h2>
       </Reveal>
       <ol className="mt-8 grid gap-4">
         {portfolio.skills.map((skill, index) => (

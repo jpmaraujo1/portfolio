@@ -1,7 +1,6 @@
 /**
  * Owner-specific copy lives here. Everything on the page reads from this file.
- * The strings below are placeholders on purpose — swap them for real details
- * without touching the layout.
+ * Edit the strings below without touching the layout.
  */
 
 export type ProjectLink = {
@@ -11,20 +10,28 @@ export type ProjectLink = {
 
 export type Project = {
   title: string;
-  /** Layout samples show the card design. They are not case studies. */
-  sample: boolean;
+  /** Short line under the title, e.g. what kind of project it is. */
+  tagline: string;
   impact: string;
   problem: string;
   contribution: string;
   stack: string[];
+  /** Optional. Leave href empty for private projects. */
   link: ProjectLink;
+  /** Shown instead of a link when the code is private. */
+  note?: string;
 };
 
 export type Skill = {
   name: string;
   detail: string;
-  /** The craft this site is meant to prove. */
+  /** Highlighted as the main skill. */
   primary?: boolean;
+};
+
+export type SocialLink = {
+  label: string;
+  href: string;
 };
 
 export type Portfolio = {
@@ -32,79 +39,68 @@ export type Portfolio = {
   role: string;
   kicker: string;
   value: string;
+  location: string;
   disciplines: string[];
+  /** Leave empty to hide the email everywhere. */
   email: string;
-  emailLabel: string;
-  aboutLabel: string;
-  about: string;
+  links: SocialLink[];
+  about: string[];
   projects: Project[];
   skills: Skill[];
-  emptyWork: {
-    title: string;
-    body: string;
-  };
 };
 
 export const portfolio: Portfolio = {
-  name: "Your name",
-  role: "Full-stack engineer",
+  name: "João Pedro Araújo",
+  role: "Web developer",
   kicker: "Portfolio",
   value:
-    "Web development is the craft. Data science and machine learning sit beside it.",
-  disciplines: ["Full-stack", "Data science", "Machine learning"],
+    "Junior web developer focused on front-end. I also build automations and work with data.",
+  location: "Rio Grande do Sul, Brazil · open to remote",
+  disciplines: ["Web development", "Automation", "Data"],
   email: "",
-  emailLabel: "Your email",
-  aboutLabel: "Your bio",
-  about:
-    "Full-stack, data science, and machine learning. Read the web work first — this page is the proof.",
+  links: [{ label: "GitHub", href: "https://github.com/jpmaraujo1" }],
+  about: [
+    "I study at Unisinos and work as an administrative assistant at a school. I started programming there, when I built a system to generate the teachers' exams automatically.",
+    "I like working on both the front-end and the back-end, and web design is my favorite part. I also work a lot with spreadsheets and data in my current job.",
+  ],
   projects: [
     {
-      title: "Project one",
-      sample: true,
-      impact: "Your impact",
-      problem: "The problem",
-      contribution: "Your part",
-      stack: ["Your stack"],
-      link: { label: "Link", href: "" },
+      title: "SAN",
+      tagline: "Automated exam generator · in production",
+      impact: "~150 exams generated. Made mandatory school-wide.",
+      problem:
+        "Teachers were assembling every exam by hand: copying questions, formatting, naming and organizing files. Slow, repetitive and easy to get wrong.",
+      contribution:
+        "Designed the whole system and its workflow, built it with AI-assisted development, and polished it with feedback from the teachers using it every week.",
+      stack: ["Google Apps Script", "Google Sheets", "Google Docs", "Google Drive"],
+      link: { label: "", href: "" },
+      note: "Private: runs inside the school's workspace",
     },
     {
-      title: "Project two",
-      sample: true,
-      impact: "Your impact",
-      problem: "The problem",
-      contribution: "Your part",
-      stack: ["Your stack"],
-      link: { label: "Link", href: "" },
+      title: "This site",
+      tagline: "Personal portfolio · design + build",
+      impact: "Designed and built from scratch.",
+      problem:
+        "I wanted a portfolio with my own design instead of a template.",
+      contribution:
+        "Visual design (Japanese street-poster style over a cloud photo), responsive layout, animations that turn off for users with reduced-motion settings, and a single content file for all the text.",
+      stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+      link: { label: "Source on GitHub", href: "https://github.com/jpmaraujo1/portfolio" },
     },
   ],
   skills: [
     {
       name: "Web development",
-      detail: "The craft this page is here to prove.",
+      detail: "HTML, CSS, TypeScript, React, Next.js, Tailwind CSS. Learning back-end.",
       primary: true,
     },
     {
-      name: "Full-stack",
-      detail: "From the interface through to the system behind it.",
+      name: "Automation",
+      detail: "Google Apps Script, Google Sheets, Excel.",
     },
     {
-      name: "Data science",
-      detail: "Questions, data, and the judgment in between.",
-    },
-    {
-      name: "Machine learning",
-      detail: "Models in service of something a person can use.",
+      name: "Data",
+      detail: "Spreadsheets and data analysis. Learning Python and SQL.",
     },
   ],
-  emptyWork: {
-    title: "Your work",
-    body: "Add two projects in the content file. The section is built as a pair, not a grid waiting for more.",
-  },
 };
-
-export const nav = [
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
-] as const;

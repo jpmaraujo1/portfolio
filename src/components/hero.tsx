@@ -28,13 +28,15 @@ export function Hero() {
               <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
                 For recruiters · 採用
               </p>
-              <span className="stamp inline-flex size-11 items-center justify-center font-sans text-lg leading-none font-bold text-[#f4b390]">仮</span>
-            </div>
-            <p className="mt-4 flex flex-wrap items-center gap-3 text-2xl">
-              <span className="font-poster tracking-tight">{portfolio.name}</span>
-              <span className="border border-[#f4b390]/50 px-2 py-0.5 font-mono text-[10px] tracking-[0.22em] text-[#f4b390] uppercase">
-                Placeholder
+              <span className="stamp inline-flex items-center px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#f4b390] uppercase">
+                Open to work
               </span>
+            </div>
+            <p className="mt-4 text-2xl">
+              <span className="font-poster tracking-tight">{portfolio.name}</span>
+            </p>
+            <p className="mt-1 font-mono text-[11px] tracking-[0.18em] text-[#d5e4f7] uppercase">
+              {portfolio.location}
             </p>
             <h1 className="mt-4 font-poster text-[clamp(2.7rem,7vw,5.6rem)] leading-[0.92] tracking-tight text-[#e8f0fa]">
               {lead ? <span className="block">{lead}</span> : null}
