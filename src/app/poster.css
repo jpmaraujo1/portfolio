@@ -218,3 +218,24 @@ section {
   .stamp { transform: rotate(-8deg); }
   .sky-wash::after { opacity: 0.28; }
 }
+
+/* Language switch: both languages are in the HTML, CSS shows one. */
+html:not([data-lang="pt"]) [data-l="pt"],
+html[data-lang="pt"] [data-l="en"] {
+  display: none !important;
+}
+
+.lang-toggle button {
+  color: rgba(247, 251, 255, 0.75);
+  transition: background-color 150ms, color 150ms;
+}
+
+.lang-toggle button:hover {
+  color: #fff;
+}
+
+html:not([data-lang="pt"]) .lang-toggle [data-for="en"],
+html[data-lang="pt"] .lang-toggle [data-for="pt"] {
+  background: #f7fbff;
+  color: #10233f;
+}

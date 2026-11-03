@@ -1,4 +1,5 @@
-import { portfolio } from "@/content/portfolio";
+import { portfolio, ui } from "@/content/portfolio";
+import { T } from "@/components/t";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/reveal";
 
@@ -11,17 +12,17 @@ export function Contact() {
         <div className="poster work-card relative overflow-hidden p-6 sm:p-10">
           <div className="relative">
             <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">05 — 連絡</p>
-            <h2 className="mt-2 font-poster text-5xl leading-none text-[#e8f0fa] sm:text-7xl">Contact</h2>
+            <h2 className="mt-2 font-poster text-5xl leading-none text-[#e8f0fa] sm:text-7xl"><T v={ui.contact} /></h2>
             {email ? (
               <p className="mt-6 font-poster text-3xl leading-none tracking-tight break-all text-white sm:text-5xl">{email}</p>
             ) : null}
             <p className="mt-5 max-w-md text-base leading-relaxed text-[#e8f0fa]">
-              Looking for a junior web development role, on-site in RS or remote.
+              <T v={ui.lookingFor} />
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               {email ? (
                 <Button asChild className="h-12 rounded-full! bg-white! px-6 tracking-[0.14em] text-[#10233f]! uppercase shadow-none hover:bg-white/90!">
-                  <a href={`mailto:${email}`}>Send an email</a>
+                  <a href={`mailto:${email}`}><T v={ui.sendEmail} /></a>
                 </Button>
               ) : null}
               {portfolio.links.map((link) => (

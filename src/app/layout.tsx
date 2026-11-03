@@ -23,13 +23,19 @@ const vibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: `${portfolio.name} — ${portfolio.role}`,
-  description: portfolio.value,
+  title: `${portfolio.name} — ${portfolio.role.en}`,
+  description: portfolio.value.en,
 };
+
+// Picks the language before first paint: saved choice, else the browser's.
+const langScript = `try{var l=localStorage.getItem("lang");if(l!=="pt"&&l!=="en"){l=(navigator.language||"").toLowerCase().indexOf("pt")===0?"pt":"en"}var r=document.documentElement;r.dataset.lang=l;r.lang=l==="pt"?"pt-BR":"en"}catch(e){}`;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${plex.variable} ${vibes.variable} h-full antialiased`}>
+    <html lang="en" data-lang="en" suppressHydrationWarning className={`${plex.variable} ${vibes.variable} h-full antialiased`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: langScript }} />
+      </head>
       <body className="min-h-full bg-[#05070c] text-[#f7fbff]">{children}</body>
     </html>
   );

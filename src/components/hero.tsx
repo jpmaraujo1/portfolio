@@ -1,5 +1,6 @@
-import { portfolio } from "@/content/portfolio";
+import { portfolio, ui } from "@/content/portfolio";
 import { Button } from "@/components/ui/button";
+import { T } from "@/components/t";
 
 function splitRole(role: string) {
   const parts = role.trim().split(/\s+/);
@@ -8,7 +9,8 @@ function splitRole(role: string) {
 }
 
 export function Hero() {
-  const { lead, accent } = splitRole(portfolio.role);
+  const en = splitRole(portfolio.role.en);
+  const pt = splitRole(portfolio.role.pt);
   const hasEmail = portfolio.email.includes("@");
 
   return (
@@ -26,35 +28,41 @@ export function Hero() {
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
-                For recruiters · 採用
+                <T v={ui.forRecruiters} /> · 採用
               </p>
               <span className="stamp inline-flex items-center px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#f4b390] uppercase">
-                Open to work
+                <T v={ui.openToWork} />
               </span>
             </div>
             <p className="mt-4 text-2xl">
               <span className="font-poster tracking-tight">{portfolio.name}</span>
             </p>
             <p className="mt-1 font-mono text-[11px] tracking-[0.18em] text-[#d5e4f7] uppercase">
-              {portfolio.location}
+              <T v={portfolio.location} />
             </p>
             <h1 className="mt-4 font-poster text-[clamp(2.7rem,7vw,5.6rem)] leading-[0.92] tracking-tight text-[#e8f0fa]">
-              {lead ? <span className="block">{lead}</span> : null}
-              <span className="block text-[#f4b390]">{accent}</span>
+              <span data-l="en">
+                {en.lead ? <span className="block">{en.lead}</span> : null}
+                <span className="block text-[#f4b390]">{en.accent}</span>
+              </span>
+              <span data-l="pt" lang="pt-BR">
+                {pt.lead ? <span className="block">{pt.lead}</span> : null}
+                <span className="block text-[#f4b390]">{pt.accent}</span>
+              </span>
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-[#f4f8fc] md:text-lg">
-              {portfolio.value}
+              <T v={portfolio.value} />
             </p>
             <div className="mt-6 h-px w-28 bg-[#f4f8fc]/80" />
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <Button asChild className="h-12 rounded-full! bg-white! px-6 text-sm tracking-[0.14em] text-[#10233f]! uppercase shadow-none hover:bg-white/90!">
-                <a href="#work">View selected work</a>
+                <a href="#work"><T v={ui.viewWork} /></a>
               </Button>
               <a
                 href={hasEmail ? `mailto:${portfolio.email}` : "#contact"}
                 className="nav-link inline-flex min-h-11 items-center font-mono text-xs tracking-[0.2em] text-[#e8f0fa] uppercase"
               >
-                Contact 連絡
+                <T v={ui.contact} /> 連絡
               </a>
             </div>
           </div>
@@ -66,25 +74,25 @@ export function Hero() {
             <div className="board relative mt-auto overflow-hidden">
               <div className="board-scan" />
               <div className="relative flex items-center justify-between border-b border-[#f4b390]/30 px-3 py-2 font-mono text-[10px] tracking-[0.22em] text-[#f4b390] uppercase">
-                <span>Index</span>
+                <span><T v={ui.index} /></span>
                 <span className="flex items-center gap-2">
                   <span className="blink inline-block size-1.5 bg-[#f4b390]" />
-                  Live
+                  <T v={ui.live} />
                 </span>
               </div>
               <ul>
                 {portfolio.skills.map((skill, index) => (
                   <li
-                    key={skill.name}
+                    key={skill.name.en}
                     className="flex items-baseline justify-between gap-3 border-b border-white/10 px-3 py-3 last:border-b-0"
                   >
                     <span className="font-mono text-[11px] text-[#f4b390]">
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                    <span className="flex-1 text-sm tracking-wide">{skill.name}</span>
+                    <span className="flex-1 text-sm tracking-wide"><T v={skill.name} /></span>
                     {skill.primary ? (
                       <span className="font-mono text-[10px] tracking-[0.16em] text-[#f4b390] uppercase">
-                        Primary
+                        <T v={ui.primary} />
                       </span>
                     ) : (
                       <span className="font-mono text-[10px] text-white/35">—</span>
