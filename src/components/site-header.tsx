@@ -12,7 +12,8 @@ const links = [
 
 function tape(lang: "en" | "pt") {
   const line = portfolio.disciplines.map((d) => d[lang]).join("   ·   ");
-  return `${line}   ·   ${line}   ·   `;
+  // Long enough that one copy is wider than any screen, so the loop never shows a gap.
+  return `${line}   ·   `.repeat(8);
 }
 
 const loop = t(tape("en"), tape("pt"));

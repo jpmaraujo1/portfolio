@@ -12,7 +12,7 @@
 .ticker {
   display: flex;
   width: max-content;
-  animation: ticker 28s linear infinite;
+  animation: ticker 112s linear infinite;
 }
 
 .sky-wash {
