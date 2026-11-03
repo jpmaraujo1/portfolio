@@ -69,9 +69,9 @@ export const portfolio: Portfolio = {
       tagline: "Automated exam generator · in production",
       impact: "~150 exams generated. Made mandatory school-wide.",
       problem:
-        "Teachers prepared exams by hand, one cover per student, swapping in adapted versions for students who need them. Slow and easy to get wrong.",
+        "Exams were sorted by hand, so special ed students could get the regular exam by mistake, and adapted exams stood out, exposing those students to mockery from classmates.",
       contribution:
-        "Designed and built the whole system: one form submission returns a print-ready PDF for the class, with each student's cover and the right exam version. Improved it with weekly feedback from teachers.",
+        "Designed and built the whole system: one form returns a print-ready PDF for the class, with a named cover on every exam and the right version behind it, so adapted exams look like everyone else's. Improved it with weekly feedback from teachers.",
       stack: ["Google Apps Script", "Google Forms", "Google Sheets", "pdf-lib"],
       link: { label: "", href: "" },
       note: "Private: runs inside the school's workspace",
