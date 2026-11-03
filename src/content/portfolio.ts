@@ -70,7 +70,7 @@ export const portfolio: Portfolio = {
     t("Automation", "Automação"),
     t("Data", "Dados"),
   ],
-  email: "",
+  email: "joaoparaujo.dev@gmail.com",
   links: [{ label: "GitHub", href: "https://github.com/jpmaraujo1" }],
   about: [
     t(
