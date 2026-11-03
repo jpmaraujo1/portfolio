@@ -22,9 +22,28 @@ const vibes = Great_Vibes({
   display: "swap",
 });
 
+const title = `${portfolio.name} — ${portfolio.role.en}`;
+const description = portfolio.value.en;
+
 export const metadata: Metadata = {
-  title: `${portfolio.name} — ${portfolio.role.en}`,
-  description: portfolio.value.en,
+  metadataBase: new URL("https://joao-araujo-portfolio.vercel.app"),
+  title,
+  description,
+  // Link previews (WhatsApp, LinkedIn, Slack…). The image comes from opengraph-image.tsx.
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: `${portfolio.name} · ${portfolio.kicker.en}`,
+    title,
+    description,
+    locale: "en_US",
+    alternateLocale: ["pt_BR"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 // Picks the language before first paint: saved choice, else the browser's.
