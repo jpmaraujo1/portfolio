@@ -19,7 +19,9 @@
   position: fixed;
   inset: 0;
   z-index: -20;
-  background: #05070c url("/cloud-bg.jpg") center / cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #05070c url("/cloud-bg.jpg") center / cover no-repeat;
 }
 
 .sky-wash::after {
