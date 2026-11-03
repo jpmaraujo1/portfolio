@@ -95,7 +95,7 @@ export const portfolio: Portfolio = {
       ),
       problem: t(
         "Adapted exams stood out, exposing special ed students to mockery. Exams got mixed up, with regular students getting adapted ones and vice versa. And teachers' covers were inconsistent, often with broken formatting.",
-        "Provas adaptadas se destacavam, expondo alunos da educação especial a deboche. Provas eram trocadas, com alunos regulares recebendo as adaptadas e vice-versa. E as capas dos professores eram inconsistentes, muitas vezes com a formatação quebrada.",
+        "Provas adaptadas se destacavam, expondo alunos do atendimento educacional especializado a deboche. Provas eram trocadas, com alunos regulares recebendo as adaptadas e vice-versa. Além disso, as capas dos professores eram inconsistentes, muitas vezes com a formatação quebrada.",
       ),
       contribution: t(
         "Designed and built the whole system: one form returns a print-ready PDF for the class, with a standardized named cover on every exam and the right version behind it, so adapted exams look like everyone else's. Improved it with weekly feedback from teachers.",
