@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio of João Pedro Araujo, junior web developer.
+Personal portfolio of João Pedro Araujo, junior full-stack developer.
 
 All text (name, projects, skills, links) lives in [`src/content/portfolio.ts`](src/content/portfolio.ts). Edit that file to update the site without touching the layout.
 
