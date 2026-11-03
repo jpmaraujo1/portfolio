@@ -172,8 +172,8 @@ export const ui = {
   about: t("About", "Sobre"),
   skills: t("Skills", "Habilidades"),
   lookingFor: t(
-    "Looking for a junior web development role, on-site in RS or remote.",
-    "Busco uma vaga de desenvolvedor web júnior, presencial no RS ou remota.",
+    "I'm looking for a junior web development role, on-site in Rio Grande do Sul or remote. Front-end is where I'm strongest, and I also bring experience automating real workflows and working with data. If you have a role, a project or just a question, send me an email.",
+    "Busco uma vaga de desenvolvedor web júnior, presencial no Rio Grande do Sul ou remota. Front-end é onde sou mais forte, e também trago experiência automatizando processos reais e trabalhando com dados. Se tiver uma vaga, um projeto ou só uma dúvida, me mande um e-mail.",
   ),
   sendEmail: t("Send an email", "Enviar e-mail"),
   builtWith: t("Designed & built with Next.js", "Desenhado e desenvolvido com Next.js"),

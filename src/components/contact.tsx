@@ -21,7 +21,7 @@ export function Contact() {
                 {email} <span aria-hidden>→</span>
               </a>
             ) : null}
-            <p className="mt-5 max-w-md text-base leading-relaxed text-[#e8f0fa]">
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-[#e8f0fa] md:text-lg">
               <T v={ui.lookingFor} />
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
