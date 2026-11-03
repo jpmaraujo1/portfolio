@@ -68,8 +68,7 @@ export const portfolio: Portfolio = {
   disciplines: [
     t("Web development", "Desenvolvimento web"),
     t("Back-end", "Back-end"),
-    t("Automation", "Automação"),
-    t("Data", "Dados"),
+    t("Automation & data", "Automação e dados"),
   ],
   email: "joaoparaujo.dev@gmail.com",
   links: [{ label: "GitHub", href: "https://github.com/jpmaraujo1" }],
@@ -148,17 +147,10 @@ export const portfolio: Portfolio = {
       ),
     },
     {
-      name: t("Automation", "Automação"),
+      name: t("Automation & data", "Automação e dados"),
       detail: t(
-        "Google Apps Script, Google Sheets, Excel.",
-        "Google Apps Script, Google Sheets, Excel.",
-      ),
-    },
-    {
-      name: t("Data", "Dados"),
-      detail: t(
-        "Spreadsheets and data analysis. Learning Python and SQL.",
-        "Planilhas e análise de dados. Aprendendo Python e SQL.",
+        "Google Apps Script, Google Sheets and Excel for automating workflows and analyzing data. Learning Python and SQL.",
+        "Google Apps Script, Google Sheets e Excel para automatizar processos e analisar dados. Aprendendo Python e SQL.",
       ),
     },
   ],

@@ -11,7 +11,6 @@ function splitRole(role: string) {
 export function Hero() {
   const en = splitRole(portfolio.role.en);
   const pt = splitRole(portfolio.role.pt);
-  const hasEmail = portfolio.email.includes("@");
 
   return (
     <section id="top" className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-8">
@@ -56,7 +55,7 @@ export function Hero() {
                 <a href="#work"><T v={ui.viewWork} /></a>
               </Button>
               <a
-                href={hasEmail ? `mailto:${portfolio.email}` : "#contact"}
+                href="#contact"
                 className="nav-link inline-flex min-h-11 items-center font-mono text-xs tracking-[0.2em] text-[#e8f0fa] uppercase"
               >
                 <T v={ui.contact} /> 連絡
