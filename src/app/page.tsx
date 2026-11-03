@@ -6,6 +6,12 @@ import { SiteHeader } from "@/components/site-header";
 import { Skills } from "@/components/skills";
 import { portfolio } from "@/content/portfolio";
 
+// Cached at build time: the year refreshes on each deploy.
+async function CurrentYear() {
+  "use cache";
+  return new Date().getFullYear();
+}
+
 export default function Home() {
   return (
     <>
@@ -19,7 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="border-t border-white/20 px-5 py-6 text-center font-mono text-[11px] tracking-[0.18em] text-white/75 uppercase">
-        © {new Date().getFullYear()} {portfolio.name} · Designed &amp; built with Next.js
+        © <CurrentYear /> {portfolio.name} · Designed &amp; built with Next.js
       </footer>
     </>
   );
