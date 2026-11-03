@@ -159,7 +159,6 @@ export const portfolio: Portfolio = {
 /** Interface labels that aren't owner content. */
 export const ui = {
   forRecruiters: t("For recruiters", "Para recrutadores"),
-  openToWork: t("Open to work", "Disponível"),
   viewWork: t("View selected work", "Ver projetos"),
   contact: t("Contact", "Contato"),
   index: t("Index", "Índice"),

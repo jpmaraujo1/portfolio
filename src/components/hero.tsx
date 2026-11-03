@@ -30,9 +30,6 @@ export function Hero() {
               <p className="font-mono text-[11px] tracking-[0.28em] text-[#d5e4f7] uppercase">
                 <T v={ui.forRecruiters} /> · 採用
               </p>
-              <span className="stamp inline-flex items-center px-2 py-1 font-mono text-[10px] tracking-[0.18em] text-[#f4b390] uppercase">
-                <T v={ui.openToWork} />
-              </span>
             </div>
             <p className="mt-4 text-2xl">
               <span className="font-poster tracking-tight">{portfolio.name}</span>
