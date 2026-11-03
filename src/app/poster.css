@@ -226,16 +226,18 @@ html[data-lang="pt"] [data-l="en"] {
 }
 
 .lang-toggle button {
-  color: rgba(247, 251, 255, 0.75);
-  transition: background-color 150ms, color 150ms;
+  color: rgba(247, 251, 255, 0.55);
+  cursor: pointer;
+  transition: color 200ms ease, background-size 280ms ease;
 }
 
 .lang-toggle button:hover {
-  color: #fff;
+  color: #f7fbff;
 }
 
+/* Active language: peach, with the nav's orange underline kept on. */
 html:not([data-lang="pt"]) .lang-toggle [data-for="en"],
 html[data-lang="pt"] .lang-toggle [data-for="pt"] {
-  background: #f7fbff;
-  color: #10233f;
+  color: #f4b390;
+  background-size: 100% 2px;
 }

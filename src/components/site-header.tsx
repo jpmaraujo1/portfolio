@@ -22,17 +22,16 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-30 bg-[#1d4d8d] text-[#f7fbff]">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-end sm:justify-between md:px-8">
-        <a href="#top" className="group flex items-baseline gap-3">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-8 gap-y-1 px-4 py-2 md:px-8">
+        <a href="#top" className="group flex min-h-11 items-center gap-3">
           <span className="font-poster text-lg leading-none tracking-tight"><T v={portfolio.kicker} /></span>
           <span className="text-sm tracking-wide text-white/80">ポートフォリオ</span>
         </a>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <nav aria-label="Page">
-          <ul className="flex flex-wrap gap-x-4 gap-y-1">
+          <ul className="flex flex-wrap justify-center gap-x-5 gap-y-1">
             {links.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="nav-link inline-flex min-h-11 items-baseline gap-1.5">
+                <a href={item.href} className="nav-link inline-flex min-h-11 items-center gap-1.5">
                   <span className="text-sm font-medium"><T v={item.label} /></span>
                   <span className="text-[11px] text-white/70">{item.jp}</span>
                 </a>
@@ -41,7 +40,6 @@ export function SiteHeader() {
           </ul>
         </nav>
         <LangToggle />
-        </div>
       </div>
       <div className="overflow-hidden bg-[#123a6b] text-[#f7fbff]">
         <p className="ticker py-1.5 font-mono text-[11px] tracking-[0.22em] uppercase">

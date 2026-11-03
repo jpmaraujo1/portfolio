@@ -13,15 +13,22 @@ function setLang(lang: Lang) {
   }
 }
 
+/** Styled like the nav links: active language in peach with the orange underline. */
 export function LangToggle() {
   return (
-    <div role="group" aria-label="Language / Idioma" className="lang-toggle flex rounded-full border border-white/45 p-0.5 font-mono text-[11px] tracking-[0.16em]">
-      <button type="button" data-for="pt" onClick={() => setLang("pt")} className="min-h-9 rounded-full px-3">
+    <div role="group" aria-label="Language / Idioma" className="lang-toggle flex min-h-11 items-center gap-1.5">
+      <button type="button" data-for="pt" onClick={() => setLang("pt")} className="nav-link min-h-11 px-0.5 text-sm font-medium">
         PT
       </button>
-      <button type="button" data-for="en" onClick={() => setLang("en")} className="min-h-9 rounded-full px-3">
+      <span className="text-sm text-white/40" aria-hidden>
+        /
+      </span>
+      <button type="button" data-for="en" onClick={() => setLang("en")} className="nav-link min-h-11 px-0.5 text-sm font-medium">
         EN
       </button>
+      <span className="text-[11px] text-white/70" aria-hidden>
+        言語
+      </span>
     </div>
   );
 }
