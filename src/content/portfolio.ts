@@ -58,8 +58,8 @@ export const portfolio: Portfolio = {
   role: t("Web developer", "Desenvolvedor web"),
   kicker: t("Portfolio", "Portfólio"),
   value: t(
-    "Junior web developer focused on front-end. I also build automations and work with data.",
-    "Desenvolvedor web júnior com foco em front-end. Também crio automações e trabalho com dados.",
+    "Junior web developer working across front-end and back-end. I build interfaces and the systems behind them: automations, integrations and data.",
+    "Desenvolvedor web júnior atuando no front-end e no back-end. Crio interfaces e os sistemas por trás delas: automações, integrações e dados.",
   ),
   location: t(
     "Rio Grande do Sul, Brazil · open to remote",
@@ -67,6 +67,7 @@ export const portfolio: Portfolio = {
   ),
   disciplines: [
     t("Web development", "Desenvolvimento web"),
+    t("Back-end", "Back-end"),
     t("Automation", "Automação"),
     t("Data", "Dados"),
   ],
@@ -78,8 +79,8 @@ export const portfolio: Portfolio = {
       "Estudo na Unisinos e trabalho como assistente administrativo em uma escola. Comecei a programar lá, quando criei um sistema para gerar automaticamente as provas dos professores.",
     ),
     t(
-      "I like working on both the front-end and the back-end, and web design is my favorite part. I also work a lot with spreadsheets and data in my current job.",
-      "Gosto de trabalhar tanto no front-end quanto no back-end, e web design é a minha parte favorita. Também trabalho bastante com planilhas e dados no meu emprego atual.",
+      "I work on both ends: the interface people use, and the logic, integrations and data behind it. Web design is my favorite part. I also work a lot with spreadsheets and data in my current job.",
+      "Trabalho nas duas pontas: a interface que as pessoas usam e a lógica, as integrações e os dados por trás dela. Web design é a minha parte favorita. Também trabalho bastante com planilhas e dados no meu emprego atual.",
     ),
   ],
   projects: [
@@ -134,10 +135,17 @@ export const portfolio: Portfolio = {
     {
       name: t("Web development", "Desenvolvimento web"),
       detail: t(
-        "HTML, CSS, TypeScript, React, Next.js, Tailwind CSS. Learning back-end.",
-        "HTML, CSS, TypeScript, React, Next.js, Tailwind CSS. Aprendendo back-end.",
+        "HTML, CSS, TypeScript, React, Next.js, Tailwind CSS.",
+        "HTML, CSS, TypeScript, React, Next.js, Tailwind CSS.",
       ),
       primary: true,
+    },
+    {
+      name: t("Back-end", "Back-end"),
+      detail: t(
+        "Server-side JavaScript with Google Apps Script: event triggers, Google APIs (Drive, Docs, Gmail), PDF processing and input validation, running in production.",
+        "JavaScript no servidor com Google Apps Script: gatilhos de eventos, APIs do Google (Drive, Docs, Gmail), processamento de PDF e validação de entradas, rodando em produção.",
+      ),
     },
     {
       name: t("Automation", "Automação"),
@@ -172,8 +180,8 @@ export const ui = {
   about: t("About", "Sobre"),
   skills: t("Skills", "Habilidades"),
   lookingFor: t(
-    "I'm looking for a junior web development role, on-site in Rio Grande do Sul or remote. Front-end is where I'm strongest, and I also bring experience automating real workflows and working with data. If you have a role, a project or just a question, send me an email.",
-    "Busco uma vaga de desenvolvedor web júnior, presencial no Rio Grande do Sul ou remota. Front-end é onde sou mais forte, e também trago experiência automatizando processos reais e trabalhando com dados. Se tiver uma vaga, um projeto ou só uma dúvida, me mande um e-mail.",
+    "I'm looking for a junior web development role, on-site in Rio Grande do Sul or remote. I work on both the front-end and the back-end, and I bring experience automating real workflows and working with data. If you have a role, a project or just a question, send me an email.",
+    "Busco uma vaga de desenvolvedor web júnior, presencial no Rio Grande do Sul ou remota. Trabalho tanto no front-end quanto no back-end, e trago experiência automatizando processos reais e trabalhando com dados. Se tiver uma vaga, um projeto ou só uma dúvida, me mande um e-mail.",
   ),
   sendEmail: t("Send an email", "Enviar e-mail"),
   builtWith: t("Designed & built with Next.js", "Desenhado e desenvolvido com Next.js"),
