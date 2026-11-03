@@ -65,7 +65,7 @@ export const portfolio: Portfolio = {
   ],
   projects: [
     {
-      title: "SAN",
+      title: "Sistema de Avaliações Nomeadas",
       tagline: "Automated exam generator · in production",
       impact: "~150 exams generated. Made mandatory school-wide.",
       problem:
