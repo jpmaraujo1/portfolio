@@ -22,27 +22,14 @@ const vibes = Great_Vibes({
   display: "swap",
 });
 
-const title = `${portfolio.name} — ${portfolio.role.en}`;
-const description = portfolio.value.en;
-
+// Link previews (WhatsApp, LinkedIn…) show just the name: no description, no image.
 export const metadata: Metadata = {
   metadataBase: new URL("https://joao-araujo-portfolio.vercel.app"),
-  title,
-  description,
-  // Link previews (WhatsApp, LinkedIn, Slack…). The image comes from opengraph-image.tsx.
+  title: portfolio.name,
   openGraph: {
     type: "website",
     url: "/",
-    siteName: `${portfolio.name} · ${portfolio.kicker.en}`,
-    title,
-    description,
-    locale: "en_US",
-    alternateLocale: ["pt_BR"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
+    title: portfolio.name,
   },
 };
 
