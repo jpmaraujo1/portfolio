@@ -108,27 +108,6 @@ export const portfolio: Portfolio = {
         "Privado: roda no workspace da escola",
       ),
     },
-    {
-      title: t("This site", "Este site"),
-      tagline: t(
-        "Personal portfolio · design + build",
-        "Portfólio pessoal · design + desenvolvimento",
-      ),
-      impact: t("Designed and built from scratch.", "Desenhado e desenvolvido do zero."),
-      problem: t(
-        "I wanted a portfolio with my own design instead of a template.",
-        "Eu queria um portfólio com design próprio, em vez de um template.",
-      ),
-      contribution: t(
-        "Visual design (Japanese street-poster style over a cloud photo), responsive layout, animations that turn off for users with reduced-motion settings, a PT/EN switch, and a single content file for all the text.",
-        "Design visual (estilo cartaz de rua japonês sobre uma foto de nuvens), layout responsivo, animações que se desligam para quem prefere menos movimento, troca de idioma PT/EN e um único arquivo de conteúdo para todo o texto.",
-      ),
-      stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-      link: {
-        label: t("Source on GitHub", "Código no GitHub"),
-        href: "https://github.com/jpmaraujo1/portfolio",
-      },
-    },
   ],
   skills: [
     {

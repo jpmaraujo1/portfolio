@@ -73,7 +73,7 @@ export function SelectedWork() {
         </div>
       </Reveal>
 
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className={projects.length > 1 ? "grid gap-4 md:grid-cols-2" : "grid gap-4"}>
         {projects.map((project, index) => (
           <Reveal key={project.title.en} delay={index * 90}>
             <ProjectCard project={project} index={index} />
