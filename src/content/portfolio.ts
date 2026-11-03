@@ -54,7 +54,7 @@ export type Portfolio = {
 };
 
 export const portfolio: Portfolio = {
-  name: "João Pedro Araújo",
+  name: "João Pedro Araujo",
   role: t("Web developer", "Desenvolvedor web"),
   kicker: t("Portfolio", "Portfólio"),
   value: t(
