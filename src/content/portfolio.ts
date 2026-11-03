@@ -69,10 +69,10 @@ export const portfolio: Portfolio = {
       tagline: "Automated exam generator · in production",
       impact: "~150 exams generated. Made mandatory school-wide.",
       problem:
-        "Teachers were assembling every exam by hand: copying questions, formatting, naming and organizing files. Slow, repetitive and easy to get wrong.",
+        "Teachers prepared exams by hand, one cover per student, swapping in adapted versions for students who need them. Slow and easy to get wrong.",
       contribution:
-        "Designed and built the whole system and its workflow, then improved it with feedback from the teachers using it every week.",
-      stack: ["Google Apps Script", "Google Sheets", "Google Docs", "Google Drive"],
+        "Designed and built the whole system: one form submission returns a print-ready PDF for the class, with each student's cover and the right exam version. Improved it with weekly feedback from teachers.",
+      stack: ["Google Apps Script", "Google Forms", "Google Sheets", "pdf-lib"],
       link: { label: "", href: "" },
       note: "Private: runs inside the school's workspace",
     },
